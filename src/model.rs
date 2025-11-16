@@ -3,9 +3,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Debug,Serialize,Deserialize)]
 pub struct LoginResponse{
     pub access_token: String,
-    pub refresh_token: String,
-    pub expires_in: i32,
-    pub refresh_expires: i32
+    pub expires_in: i32
 }
 
 impl LoginResponse {
